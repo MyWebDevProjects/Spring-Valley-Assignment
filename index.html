@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=1">
+		<title>וולוו</title>
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/full-screen.css" media="screen and (min-width: 1001px)"/>
+		<link rel="stylesheet" href="css/mobile.css" media="screen and (max-width:1000px)"/>
+             <link rel="icon" type="image/png" href="images/favicon.png" />
+				 
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+			<!--TODO-->
+				<a href="https://www.spring-valley.co.il/" target="_blank" class="logo" title="לאתר ספרינג וואלי"><img src="images/logoSpringValley.png" alt="לוגו וולוו" title="לאתר ספרינג וואלי"/></a>
+			<!--TODO-->
+				<div id="content">
+					<h1>VOLVO </h1>
+					<h2>
+						<span class="whitebg">ה-<span class="en">SUV</span> הנמכר ביותר באירופה</span>
+						<span class="whitebg floated">עכשיו ב-</span>
+						<span class="price">269,900</span>
+						<span class="floated nis">₪</span>
+						<span class="oldprice"> ₪במקום 297,900  <span class="line-divider">|--------------</span></span>
+					</h2>
+					<ul>
+						<li>245 כ"ס</li>
+						<li>תיבת 8 הילוכים</li>
+						<li>מנוע טורבו 2.0 ליטר</li>
+					</ul>
+				</div>
+			</header>
+			<main>
+				<div class="call-now mobile"><a href="tel:077-3601407" id="call-now">לשיחה עם נציג עכשיו</a></div>
+				<div id="form_wrapper">
+					<form id="contact_form" aria-hidden="false" autocomplete="off" method="POST" target="lead_frame" action="process.php">
+
+
+						<h3 id="form_title">למידע נוסף מלאו פרטים:</h3>
+						<div class="form_item" id="nameinput">
+							<span class="error_msg" id="full_name-error"></span>
+							
+								<input type="text" placeholder="שם" id="full_name" name="name" title="שם" maxlength="30" data-require="1"/>
+							
+							<label for="full_name" class="screen-reader-text">שם</label>
+						</div>
+						<div class="form_item" id="phoneinput">
+							<span class="error_msg" id="phone-error"></span>
+							<span class="error_msg" id="form_pre_phone-error"></span>
+							<span class="inputwrapper">
+								<input type="tel" placeholder="טלפון" id="phone" name="phone"  maxlength="10" title="טלפון" data-require="1" class="numericinput" />
+							</span>
+							<label for="phone" class="screen-reader-text">טלפון</label>
+						</div>
+						<div class="form_item" id="submitinput">
+							<input type="submit" id="formsubmit" value="שלח >>" title="שלח" />
+						</div>
+					</form>
+					<iframe name="lead_frame" id="lead_frame"></iframe>
+					<div id="thanks" aria-hidden="true"><span id="header">תודה,</span><p>פרטיך התקבלו בהצלחה. בקרוב יצרו איתך קשר</p></div>
+				</div>
+			</main>
+			<footer>
+				<a href="" target="_blank"><img src="images/logo-empty.png" id="spring_logo" alt="לוגו ספרינג וואלי" title="לאתר ספרינג וואלי" /></a>
+				<div class="footer_top">*התמונה להמחשה בלבד *בכפוף לתקנון *29 רכבים במלאי *המבצע בתוקף עד 31.12.2017 *המחיר מתייחס לדגם <span class="en">Kinetic T5</span> בעסקת מזומן בלבד.</div>
+				<hr>
+				<div class="footer_bottom">
+					דרגת זיהום 
+					<span class="rectangle red">15</span>
+					<span class="rectangle orange">13</span>
+					רמת האבזור הבטיחותי
+					<span class="rectangle blue">6</span>
+					לפרטים:
+					<a href="http://www.volvocars.co.il" id="volvo_link" target="_blank" title="לאתר וולוו">volvocars.co.il</a>
+				</div>
+				
+			</footer>
+		</div>
+
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/validate.js"></script>
+		<script type="text/javascript" src="js/flowtype.js"></script>
+		<script src="js/jquery.placeholder.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		
+</html>
